@@ -1,0 +1,62 @@
+html, body{ 
+  background: url(background/painel_final_fundo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;  
+}
+a:link { 
+ text-decoration:none; 
+} 
+.corpo{
+  padding-top: 0%;
+}
+#ajuste_logo_caixa{
+  display: block;
+  float: right;
+  margin-right: 6%;
+  padding-top: 2%;
+  width: 20%;
+}
+#ajuste_logo_sistema{
+  display: block;
+  float: left;
+  margin-left: 6%;
+  padding-top: 2%;
+  width: 20%;
+}
+
+@media screen and (max-width : 991px){
+  .corpo{
+    padding-top: 2%;
+  }
+  #ajuste_logo_caixa{
+/*
+    margin: auto;
+    float: none;
+    width: 50%;
+    padding-bottom: 0%;
+*/
+    margin: 0%;
+  }
+  #ajuste_logo_sistema{
+/*
+    margin: auto;
+    float: none;
+    width: 50%;
+    padding-bottom: 0%;
+*/
+    margin: 0%;
+  }
+  #ajuste_menu{
+    padding-bottom: 5%;
+    padding-top: 5%;   
+    width: 95%;
+  }
+  .corpo .img-responsive {
+    margin: 0 auto;
+  }
+
+}

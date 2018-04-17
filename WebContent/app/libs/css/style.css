@@ -1,0 +1,88 @@
+/*
+ * Metro-tiles:  Css3 windows metro tiles
+ * Author     :  Tim Holman
+ * @Author    :  @twholman
+ * -- None of this css is required, its just for the demo ;)
+ */
+
+ body {
+ 	margin: 0px;
+ 	font-family:'Lato', Helvetica, sans-serif;
+ 	line-height: 28px;
+	font-size: 16px;
+	color: #333;
+	font-weight: lighter;
+ }
+
+ #contents {
+ 	padding: 35px;
+	width: 1080px;
+	box-shadow: 0px 0px 20px -8px #999;
+	background-color: white;
+	position: relative;
+ }
+
+ #container {
+ 	width: 1080px;
+ }
+
+ header {
+ 	margin-bottom: 30px;
+ 	margin-top: 5px;
+ }
+
+ h1 {
+ 	font-weight: normal;
+ 	text-align: center;
+ }
+
+ p a {
+ 	font-weight: normal;
+ 	text-decoration: none;
+ 	color: #111;
+ 	border-bottom: 1px dotted #111;
+ }
+
+ p a:hover {
+ 	color: deepPink;
+ 	border-bottom: 1px dotted deepPink;
+ }
+
+ .back-link {
+ 	width: 50px;
+	height: 40px;
+	background-color: white;
+	position: absolute;
+	top: 10px;
+	display: block;
+	left: 10px;
+	font-size: 50px;
+	line-height: 38px;
+	text-decoration: none;
+	box-shadow: 0px 0px 20px -8px #333;
+	color: deepPink;
+	border-radius: 3px;
+ }
+
+ .back-link:hover {
+ 	background-color: deeppink;
+ 	color: #fff;
+ }
+/*
+#metro-array{
+	display: inline-block;
+}*/
+
+ #metro-array a,  #downloads a {
+ 	text-indent: 5px;
+ 	font-weight: normal;
+ }
+
+ #downloads {
+ }
+
+ #downloads a {
+ 	color: #222;
+ 	font-weight: normal;
+	
+ }

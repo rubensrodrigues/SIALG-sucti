@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app/libs/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="app/libs/css/login_style.css" />
+
+</head>
+<body>  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12 corpo">
+                <div class="row">
+                    <img id="ajuste_logo_caixa" src="app/libs/img/caixa_branco.svg" class="img-responsive">
+                </div>
+                <div class="row">
+                   <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 menu_login">
+                        <img id="ajuste_logo_sistema" src="app/libs/img/logo_azul.svg" class="img-responsive">
+                        <div id="message_error" class="alert alert-danger" style="display:none"></div>
+                        <div id="load"></div>
+                        <div id="login">
+                            <form name='form-login'>
+                               <span>
+                                    <img id="ajuste_icone" src="app/libs/img/painel_login_user.png">
+                                </span>
+                                <input type="text" id="user" placeholder="Matrícula">
+                                <span>
+                                    <img id="ajuste_icone" src="app/libs/img/painel_login_password.png">
+                                </span>
+
+                                <input type="password" id="pass" ng-keypress="($event.which === 13)?loginBOE():0" placeholder="Senha">
+                                <button type="button" ng-click="loginBOE()" class="botao btn-1" >ACESSAR</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script src="app/libs/js/jquery-3.2.1.min.js"></script>
+ <script src="app/libs/js/bootstrap.js"></script>   
+</body>
+</html>

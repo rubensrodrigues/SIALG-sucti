@@ -1,0 +1,209 @@
+#texto_botao{
+	position: absolute;
+	font-size: 70%;
+	text-align: left;
+	padding-left: 2%;
+	bottom: 0%;
+	font-weight: bold;
+}
+
+.metro-tile{
+	position: relative;
+}
+
+#ajuste_icone_grande{
+	position: absolute;
+	margin: 0 auto;
+	display: block;
+	width: 55px;
+	text-align: center;
+	left: 87.5px;
+	bottom: 87.5px;
+}
+#ajuste_icone_medio{
+	position: absolute;
+	margin: 0 auto;
+    display: block;
+	width: 55px;
+	text-align: center;
+	bottom: 27.5px;
+	left: 87.5px;
+}
+#ajuste_icone_pequeno{
+	position: absolute;
+	margin: 0 auto;
+    display: block;
+	width: 55px;
+	text-align: center;
+	bottom: 27.5px;
+	left: 27.5px;
+}
+
+/*colunas*/ 
+.menu{
+	padding-top: 5%;/*
+	background-color: red;*/
+	
+}
+#coluna_1{
+	width: 230px;
+	height: 350px;
+	float: left;
+	margin-left: 180px;
+	margin-bottom: 10px;
+}
+#coluna_2{
+	width: 350px;
+	height: 350px; 
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+#coluna_3{
+	width: 230px;
+	height: 350px;
+	float: left;
+	margin-left:10px;
+	margin-bottom: 10px;
+}
+
+/*botões*/
+#botao_01{
+cursor: pointer;
+display: block;
+width: 230px;
+height: 230px; 
+background-color: #007E9B; 
+color: #fff;
+margin-bottom: 10px;
+}
+
+
+#botao_02{
+cursor: pointer;
+width: 110px;
+height: 110px;
+display: block;
+background-color: #A270DE;
+color: #fff;
+float: left;
+margin-right: 10px;
+margin-bottom:10px;
+}
+#botao_03{
+cursor: pointer;
+width: 110px;
+height: 110px;
+display: block;
+background-color: #F18645;
+color: #fff;
+float: left;
+margin-right:10px;
+margin-bottom:10px;
+}
+#botao_04{
+cursor: pointer;
+width: 110px;
+height: 110px;
+display: block;
+background-color: #5A872E;
+color: #fff;
+float: right;
+margin-bottom: 10px;
+}
+#botao_05{
+cursor: pointer;
+width: 110px;
+height: 110px;
+display: block;
+background-color: #F27262;
+color: #fff;
+float: left;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+#botao_06{
+cursor: pointer;
+width: 230px;
+height: 110px;
+display: block;
+background-color: #00B1BB;
+color: #fff;
+float:right;
+margin-bottom: 10px;
+}
+#botao_07{
+cursor: pointer;
+width: 230px;
+height: 230px;
+display: block;
+background-color: #E19533;
+color: #fff;
+margin-bottom: 10px;
+}
+#botao_08{
+cursor: pointer;
+width: 110px;
+height: 110px;
+display: block;
+background-color: #F9C169;
+color: #fff;
+float: left;
+margin-right: 10px;
+}#botao_09{
+cursor: pointer;
+width: 110px;
+height: 110px;
+display: block;
+background-color: #A43F34;
+color: #fff;
+float: right;
+}#botao_10{
+cursor: pointer;
+width: 230px;
+height: 110px;
+display: block;
+background-color: #78B23F;
+color: #fff;
+float: left;
+margin-right: 10px;
+}
+#botao_11{
+cursor: pointer;
+width: 110px;
+height: 110px;
+display: block;
+background-color: #5D19AB;
+color: #fff;
+float: right;
+}
+#botao_12{
+cursor: pointer;
+width: 110px;
+height: 110px;
+display: block;
+background-color: #E55A24;
+color: #fff;
+float: left;
+margin-right: 10px;
+}
+#botao_13{
+cursor: pointer;
+width: 110px;
+height: 110px;
+display: block;
+background-color: #666666;
+color: #fff;
+float: right;
+}
+
+@media screen and (max-width : 870px) {
+	#coluna_1{
+		/*float: left;*/
+		margin-left: 10px;
+		
+	}
+	#coluna_2{
+		float: left;
+	}
+}
