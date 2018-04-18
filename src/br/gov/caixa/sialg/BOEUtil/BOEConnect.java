@@ -1,7 +1,13 @@
 package br.gov.caixa.sialg.BOEUtil;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Properties;
 import java.util.ResourceBundle;
 
 import org.apache.axis2.AxisFault;
@@ -30,7 +36,7 @@ public class BOEConnect {
 		String urlOpenDocument = getProperty("urlOpenDocument");
 
 		if(urlBOE == null){
-			throw new Exception("Erro ao buscar arquivo de configurações de conexão ao BOE");
+			throw new Exception("Erro ao buscar arquivo de configuraï¿½ï¿½es de conexï¿½o ao BOE");
 		}else{
 		
 			/**
@@ -41,7 +47,7 @@ public class BOEConnect {
 	//		String urlOpenDocument = "http://SRJDEAPLNT0018.desenvolvimento.extracaixa:8080/BOE/OpenDocument/opendoc/openDocument.jsp";
 	
 			/**
-			 * FIXO PARA PRODUÇÃO
+			 * FIXO PARA PRODUï¿½ï¿½O
 			 */
 	//		String urlBOE = "http://inteligenciadenegocio.caixa.gov.br/dswsbobje/services/Session";
 	//		String domain = "@SAPCLTPRD01";
@@ -120,12 +126,29 @@ public class BOEConnect {
 	
 	private String getProperty(String property){
 		String value = null;
+		
+		File configDir =  new File(System.getProperty("catalina.base"), "app_config");
+		File configFile = new File(configDir, "RelatoriosSIALG.properties");
+		InputStream stream;
 		try {
-			ResourceBundle rb = ResourceBundle.getBundle("RelatoriosSIALG");
-			 value = rb.getString(property);
-		} catch (Exception e) {
+			stream = new FileInputStream(configFile);
+			Properties props = new Properties();
+			props.load(stream);
+			value = props.getProperty(property);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+//		try {
+//			ResourceBundle rb = ResourceBundle.getBundle("RelatoriosSIALG");
+//			 value = rb.getString(property);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 		return value;
 	}
 

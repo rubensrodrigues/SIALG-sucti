@@ -1,0 +1,62 @@
+.menu{
+  margin-top: 2%;
+}
+
+.down_menu{
+  background-color: #007E9B; 
+  color: #fff;
+  margin-left: 5%;
+  width: 90%;
+  height: 60px;
+  text-align: center;
+}
+
+.down_menu img{
+  width: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.down_menu p{
+  font-size: 20px;
+  line-height: 60px;
+}
+
+#left{
+  position: absolute;
+  float: left;
+}
+
+#center{
+  margin: 0 auto;
+  display: inline-block;
+}
+
+/*modificar a desativação do ícone para o relatorio correspondente*/
+.botao_menu:not(#botao_3){
+  opacity: .8;
+}
+.botao_menu:hover:not(#botao_3){
+  opacity: 1;
+}
+#botao_3 img{
+  opacity: 0;
+}
+
+@media screen and (max-width : 576px) {
+  
+  .down_menu{
+    height: 50px;
+  }
+
+  .down_menu img{
+    width: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .down_menu p{
+    font-size: 15px;
+    line-height: 50px;
+  }
+}

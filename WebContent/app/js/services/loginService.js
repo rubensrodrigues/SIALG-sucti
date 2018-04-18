@@ -12,7 +12,7 @@ app.factory("loginService", [ '$http', function($http) {
     		
     		},
     		logar : function(auth){
-    			var url = "/SIALG-sinti/rest/service/auth";
+    			var url = "/SINTI/rest/service/auth";
     			
     			var body = {};
         	

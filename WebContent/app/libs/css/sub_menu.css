@@ -1,0 +1,204 @@
+html, body{ 
+  background: url(background/painel_final_fundo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;  
+}
+
+#botao_1{
+  background-color: #5D19AB;
+}
+#botao_2{
+  background-color: #A270DE;
+}
+#botao_3{
+  background-color: #007E9B;
+}
+#botao_4{
+  background-color: #00B1BB; 
+}
+#botao_5{
+  background-color: #5A872E;  
+}
+#botao_6{
+  background-color: #78B23F;  
+}
+#botao_7{
+  background-color: #E19533;  
+}
+#botao_8{
+  background-color: #F9C169; 
+}
+#botao_9{
+  background-color: #E55A24;  
+}
+#botao_10{
+  background-color: #F18645;  
+}
+#botao_11{
+  background-color: #A43F34;  
+}
+#botao_12{
+  background-color: #F27262;
+}
+#botao_13{
+  background-color: #666666;
+}
+.nav>li>a {
+    display: block;
+}
+.navbar-default{
+  background-color: #273648;
+  border: 0px;
+  margin-left: 5%;
+  width: 90%;
+  margin-bottom: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+  width: 100%;
+}
+.navbar-nav{
+  width: 92.307692307692308%;
+}
+.navbar-nav>li>a {
+    width: 100%;
+    padding: 0;
+    padding-top: 5px;
+}
+.navbar-nav li{
+  width: 8.33333333%;
+}
+.navbar-toggle{
+  float: left;
+}
+.botao_menu{
+  line-height: 50px;
+  height: 50px;
+  width: 7.69230769%;
+  padding: 0px;
+  margin-top: 0px;
+}
+.botao_menu img{
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+}
+.botao_sair{
+  line-height: 50px;
+  height: 50px;
+  width: 7.69230769%;
+  float: right;
+  opacity: .8;
+}
+.botao_sair img{
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 5px;
+}
+.botao_sair:hover{
+  opacity: 1;
+}
+.navHeaderColapse{
+  width: 100%;  
+}
+
+@media screen and (max-width : 768px){
+  .navbar-nav{
+    width: 100%;
+  }
+  .navbar-nav li{
+    margin-left: 3%;
+    width: 100%;
+  }
+  #botao_12{
+    margin-bottom: 2%;
+  }
+  .navbar-toggle{
+    margin-left: 3%;
+  }
+  .botao_sair{
+    margin-right: 1%;
+    width: 13%;
+  }
+  #botao_13{
+    background-color: transparent;
+  }
+  .botao_sair li a img{
+    max-width: 25px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cabecalho{
+  margin-top: 2%;
+}
+
+#ajuste_logo_caixa{
+  display: block;
+  float: right;
+  margin-right: 6%;
+  width: 20%;
+}
+
+#ajuste_logo_sistema{
+  display: block;
+  float: left;
+  margin-left: 6%;
+  width: 26%;
+}
+
+.meio{
+}
+
+.fundo_meio{
+    width: 90%;
+    margin-left: 5%;
+    background-image: linear-gradient(to right, #325E89 0%, #253446 80%, #273648 100%);
+    z-index: 0;
+}
+
+.botao_unico a img{
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15%;
+  z-index: 1;
+  opacity: .80;
+}
+
+.botao_unico a img:hover{
+  opacity: 1;
+}
+
+#conjunto_botoes{
+  margin-top: 5%;
+}
+
+@media screen and (max-width : 576px){ 
+  .botao_unico a img{
+    width: 84%;
+    margin-left: 8%;
+    margin-bottom: 5%
+  }
+
+  #ultimo_botao{
+    margin-bottom: 5%;
+  }
+
+}

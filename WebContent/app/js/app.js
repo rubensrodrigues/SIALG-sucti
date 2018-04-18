@@ -20,8 +20,8 @@ app.config(function($routeProvider, $httpProvider) {
 			templateUrl	: 'app/views/unidades.html',
 			controller	: 'painelController'
 		})
-		.when('/orcamentos', {
-			templateUrl	: 'app/views/orcamentos.html',
+		.when('/orcamentos_ti', {
+			templateUrl	: 'app/views/orcamentos_ti.html',
 			controller	: 'painelController'
 		})
 		.when('/fnt', {
@@ -44,8 +44,8 @@ app.config(function($routeProvider, $httpProvider) {
 			templateUrl	: 'app/views/auditorias.html',
 			controller	: 'painelController'
 		})
-		.when('/desenv_sistemas', {
-			templateUrl	: 'app/views/desenv_sistemas.html',
+		.when('/desenvolvimento_sistemas', {
+			templateUrl	: 'app/views/desenvolvimento_sistemas.html',
 			controller	: 'painelController'
 		})
 		.when('/itens_configuracao', {
